@@ -1,24 +1,24 @@
 package com.proj.pizza;
 
 public enum Cities {
-	MANILA("Manila","01"),
-	QUEZON("Quezon","02"),
-	CALOOCAN("Caloocan","03"),
-	LAS_PINAS("Las Pinas","04"),
-	MAKATI("Makati","05"),
-	MALABON("Malabon","06"),
-	MANDALUYONG("Mandaluyong","07"),
-	MARIKINA("Marikina","08"),
-	MUNTINLUPA("Muntinlupa","09"),
-	NAVOTAS("Navotas","10"),
-	PARANAQUE("Paranaque","11"),
-	PASAY("Pasay","12"),
-	PASIG("Pasig","13"),
-	PATEROS("Pateros","14"),
-	SAN_JUAN("San Juan","15"),
-	TAGUIG("Taguig","16"),
-	VALENZUELA("Valenzuela","17"),
-	NONE("none","00");
+	MANILA("Manila","A"),
+	QUEZON("Quezon","B"),
+	CALOOCAN("Caloocan","C"),
+	LAS_PINAS("Las Pinas","D"),
+	MAKATI("Makati","E"),
+	MALABON("Malabon","F"),
+	MANDALUYONG("Mandaluyong","G"),
+	MARIKINA("Marikina","H"),
+	MUNTINLUPA("Muntinlupa","I"),
+	NAVOTAS("Navotas","J"),
+	PARANAQUE("Paranaque","K"),
+	PASAY("Pasay","L"),
+	PASIG("Pasig","M"),
+	PATEROS("Pateros","N"),
+	SAN_JUAN("San Juan","O"),
+	TAGUIG("Taguig","P"),
+	VALENZUELA("Valenzuela","Q"),
+	NONE("none","Z");
 	
 	private String strCity;
 	private String number;

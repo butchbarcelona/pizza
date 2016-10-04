@@ -47,7 +47,7 @@ public class LocationService extends Service {
             String address = getCompleteAddressString(latitude, longitude);
             Log.d("pizza", "complete address:" + address);
             String cityNumber = getCity(latitude, longitude);
-            sendSMS(number, cityNumber+":"+address);
+            sendSMS(number, "["+cityNumber+"]"+address);
         }
         return super.onStartCommand(intent, flags, startId);
     }
