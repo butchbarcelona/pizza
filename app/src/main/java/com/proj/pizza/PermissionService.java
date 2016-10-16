@@ -19,20 +19,6 @@ public class PermissionService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-
-    }
-
-    @Override
-    public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
-
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-
-
-
         PermissionEverywhere.getPermission(this,
                 new String[]{Manifest.permission.RECEIVE_SMS
                         , Manifest.permission.ACCESS_COARSE_LOCATION
@@ -49,6 +35,18 @@ public class PermissionService extends Service {
                         Toast.makeText(PermissionService.this, "is Granted " + permissionResponse.isGranted(), Toast.LENGTH_SHORT).show();
                     }
                 });
+
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // TODO: Return the communication channel to the service.
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
         return super.onStartCommand(intent, flags, startId);
     }
 }
